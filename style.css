@@ -878,3 +878,11 @@ section:nth-child(odd) .animate.scroll,
         width: 0;
     }
 }
+
+.navbar {
+    display: none; /* Hide the navbar by default */
+}
+
+.navbar.active {
+    display: block; /* Show the navbar when active */
+}
