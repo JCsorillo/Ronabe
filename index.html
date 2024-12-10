@@ -18,14 +18,11 @@
         <a href="#" class="logo">RONABE NISU|CICS<span class="animate" style="--i:1;"></span></a>
         
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
-
         <nav class="navbar">
-
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
             <a href="education.html">Education</a>
             <a href="Photos.html">Photos</a>
-
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
         </nav>
@@ -157,6 +154,12 @@
             <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active'); // Toggle the 'active' class
+        });
+    </script>
 
 </body></html>
